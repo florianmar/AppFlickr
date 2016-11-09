@@ -23,7 +23,7 @@ gulp.task('browser-sync', function() {
     port: 3000,
     server: {
       baseDir: "./", //base directory
-      index: "foto.html" //fichier à charger par défaut
+      index: "index.html" //fichier à charger par défaut
     }
   });
 });
@@ -34,9 +34,9 @@ gulp.task('css', function() {
   //gulp.src -> cherche un ou plusieurs fichiers sources à minifier
   return gulp.src(['./css/foto.css', './css/contact.css']) // src = source de fichiers
   .pipe(sourcemaps.init())
-  .pipe(uncss({
-          html: ['index.html', 'posts/**/*.html', 'http://example.com']
-      }))
+  // .pipe(uncss({
+  //         html: ['index.html']
+  //     }))
   .pipe(size())
   // .pipe(autoprefixer())
   .pipe(minifyCss()) // compresser ma css par le module gulp-minify-css
@@ -54,7 +54,7 @@ gulp.task('js', function() {
   console.log('Ma tâche js...')
   return gulp.src(['js/*js']) // src = source de fichier
   .pipe(concat('app.min.js'))//concaténation en 1 fichier
-  .pipe(uglify())
+  // .pipe(uglify())
   .pipe(gulp.dest('dist/js/')) // permet d'envoyer le fichier minifié dans le répertoire de destination dist/css
   .pipe(notify('js-modifié'))
 

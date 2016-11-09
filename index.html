@@ -7,8 +7,9 @@
     <title></title>
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="/bower_components/materialize/dist/css/materialize.min.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="/css/foto.css" media="screen" title="no title" charset="utf-8">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -19,9 +20,71 @@
   </head>
   <body>
 
+
+    <nav>
+      <a class="waves-effect waves-light btn">Javascript</a>
+      <a class="waves-effect waves-light btn">PHP</a>
+      <a class="waves-effect waves-light btn">AngularJs</a>
+      <a class="waves-effect waves-light btn">HTML</a>
+      <a class="waves-effect waves-light btn">CSS</a>
+      <a class="waves-effect waves-light btn" id='actif'>Actif</a>
+
+
+    </nav>
+    <div class="container">
+
+
+      <ul id="slide-out" class="side-nav">
+
+
+        <li>
+          <div class="userView">
+          <div class="background">
+            <img src="img/alexandros.jpg">
+          </div>
+          <a href="#!user"><img class="circle" src="img/alexandros.jpg"></a>
+          <a href="#!name"><span class="white-text name">The Taupe</span></a>
+          <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
+        </div></li>
+        <form class="tags" action="index.html" method="post">
+          <input type="tags" name="name" value="">
+        </form>
+        <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+            <i class="material-icons right">Ajouter des fotos</i>
+        </button>
+
+
+
+
+      </ul>
+
+
+
+      <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">sidebar</i></a>
+
+
+      <div id="photos">
+
+      </div>
+
+    </div>
+
+
+
+
+
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src='bower_components/jquery/dist/jquery.min.js'>
+
+    </script>
+    <script src="bower_components/materialize/dist/js/materialize.min.js">
+
+    </script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src='js/foto.js'>
+
+    </script>
+
   </body>
 </html>

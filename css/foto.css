@@ -1,0 +1,28 @@
+body{
+
+  margin:0;
+  box-sizing: border-box;
+  background-color: #80cbc4;
+
+}
+.container{
+
+  max-width :80%;
+
+  text-align: center;
+}
+nav{
+  background-color: #00695c;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer{
+background-color: #00695c;
+height:50px;
+
+}
+#actif{
+  display:  ;
+}
