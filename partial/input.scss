@@ -1,0 +1,9 @@
+input{
+  @include inputBeautify('5px','1px solid black','comic sans ms');
+  color: blue;
+  &[type='text']{
+    color : $second;
+
+  }
+}
+input

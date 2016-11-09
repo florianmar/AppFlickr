@@ -1,0 +1,18 @@
+div alert{
+  height:50px;
+  width:550px;
+  padding: 5px;
+
+}
+div.error{
+  @extend .alert;
+  width: 600px;
+
+}
+
+div.warn{
+  @@extend .alert ;
+    height : 60px
+
+
+}
