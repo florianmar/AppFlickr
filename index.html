@@ -22,19 +22,17 @@
 
 
     <nav>
-      <a class="waves-effect waves-light btn">Javascript</a>
-      <a class="waves-effect waves-light btn">PHP</a>
-      <a class="waves-effect waves-light btn">AngularJs</a>
-      <a class="waves-effect waves-light btn">HTML</a>
-      <a class="waves-effect waves-light btn">CSS</a>
-      <a class="waves-effect waves-light btn" id='actif'>Actif</a>
-
+      <a class="waves-effect waves-light btn"id="js" class='nav'>Javascript</a>
+      <a class="waves-effect waves-light btn" id='php'class='nav'>PHP</a>
+      <a class="waves-effect waves-light btn" id='angular'class='nav'>Angular</a>
+      <a class="waves-effect waves-light btn" id='html'class='nav'>HTML</a>
+      <a class="waves-effect waves-light btn"id='css'class='nav'>CSS</a>
 
     </nav>
     <div class="container">
 
 
-      <ul id="slide-out" class="side-nav">
+      <ul id="slide-out" class="side-nav" >
 
 
         <li>
@@ -47,11 +45,15 @@
           <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
         </div></li>
         <form class="tags" action="index.html" method="post">
-          <input type="tags" name="name" value="">
-        </form>
-        <button class="btn waves-effect waves-light" type="submit" name="action">Submit
-            <i class="material-icons right">Ajouter des fotos</i>
-        </button>
+          <li>
+          <input type="tags" name="name" id='search'value=""></li>  </form>
+
+          <li class='tarace'><button class="btn waves-effect waves-light" type="submit" id='envoi'name="action">Submit
+
+          </button></li>
+
+
+
 
 
 
