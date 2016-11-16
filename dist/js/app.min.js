@@ -3,6 +3,19 @@ $(document).ready(function() {
   $(".button-collapse").sideNav();
   // appel de la sidenav
 
+  // var slider = document.getElementById('test5');
+  // noUiSlider.create(slider, {
+  //  start: [20, 80],
+  //  connect: true,
+  //  step: 1,
+  //  range: {
+  //    'min': 10,
+  //    'max': 100
+  //  },
+  //  format: wNumb({
+  //    decimals: 0
+  //  })
+  // });
 
 
   $('a.btn').click(function(){
@@ -78,8 +91,17 @@ $(document).ready(function() {
         $.each(data.items, function(i,item){
           console.log(item);
 
-          $('<img />').attr('src', item.media.m).appendTo('#photos')
-          console.log('fsdfd');
+          var img = $('<img />').attr('src', item.media.m);
+
+
+          img.hover(function(){
+            console.log("coucou");
+            $(this).addClass('animated shake')
+          }, function(){
+            $(this).removeClass('animated shake')
+          });
+
+          img.appendTo('#photos')
 
         });
 
@@ -99,5 +121,6 @@ $(document).ready(function() {
 
 
   });//fin de la fonction click
+
 
 });//fin du ready

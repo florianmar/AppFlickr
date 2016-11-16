@@ -2,7 +2,7 @@ body{
 
   margin:0;
   box-sizing: border-box;
-  background-color: #80cbc4;
+  background-color: #2BBBAD;
 
 }
 .container{
@@ -12,14 +12,23 @@ body{
   text-align: center;
 }
 nav{
-  background-color: #00695c;
+
+  background:linear-gradient(30deg, white, #00695c);
   max-width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  height:66px;
+
 }
 footer{
 background-color: #00695c;
 height:50px;
 
+}
+.search i{
+  color:white;
+}
+img{
+  margin:10px;
 }

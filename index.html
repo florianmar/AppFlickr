@@ -8,8 +8,14 @@
 
     <!-- Bootstrap -->
 
+
+
+
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="/bower_components/materialize/dist/css/materialize.min.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="bower_components/animate.css/animate.min.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="/css/foto.css" media="screen" title="no title" charset="utf-8">
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -19,9 +25,10 @@
     <![endif]-->
   </head>
   <body>
-
+  <div class="container">
 
     <nav>
+
       <a class="waves-effect waves-light btn"id="js" class='nav'>Javascript</a>
       <a class="waves-effect waves-light btn" id='php'class='nav'>PHP</a>
       <a class="waves-effect waves-light btn" id='angular'class='nav'>Angular</a>
@@ -29,7 +36,7 @@
       <a class="waves-effect waves-light btn"id='css'class='nav'>CSS</a>
 
     </nav>
-    <div class="container">
+
 
 
       <ul id="slide-out" class="side-nav" >
@@ -50,19 +57,27 @@
 
           <li class='tarace'><button class="btn waves-effect waves-light" type="submit" id='envoi'name="action">Submit
 
+
           </button></li>
 
 
-
+          <form action="#">
+           <p class="range-field">
+             <input type="range" id="test5" min="10" max="100" value="50" />
+           </p>
+          </form>
+          
 
 
 
 
       </ul>
+      <div class="search">
+        <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">search</i></a>
+      </div>
 
 
 
-      <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">sidebar</i></a>
 
 
       <div id="photos">
